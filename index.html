@@ -3,93 +3,34 @@
 <html>
 <head>
     <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: purple;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .nav li {
-            margin: 0 15px;
-        }
-        .nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 50px); /* Adjust height to account for header */
-        }
-        .heart {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            transform: rotate(-45deg);
-        }
-        .heart::before,
-        .heart::after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .heart::before {
-            top: -50px;
-            left: 0;
-        }
-        .heart::after {
-            left: 50px;
-            top: 0;
-        }
-        .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            font-size: 16px;
-            font-weight: bold;
-            color: purple;
-            z-index: 1; /* Bring text to front */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
         <ul class="nav">
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#magazine">Magazine</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="origins.html">Gallery</a></li>
+            <li><a href="origins.html">Origins</a></li>
         </ul>
     </div>
     <div class="content">
-        <div class="heart">
-            <div class="text">I love char</div>
+        <div class="heart-section">
+            <div class="heart">
+                <div class="text">I love char</div>
+            </div>
+            <div class="papers">
+                <img src="images/paper1.png" alt="paper1">
+                <img src="images/paper2.png" alt="paper2">
+                <img src="images/paper3.png" alt="paper3">
+                <img src="images/paper4.png" alt="paper4">
+            </div>
+        </div>
+        <div class="index-image-2"> 
+            <img src="index-image-2.png" alt="index-image-2">
         </div>
     </div>
+    
 </body>
 </html>

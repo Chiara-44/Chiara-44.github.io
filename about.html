@@ -2,54 +2,22 @@
 <html>
 <head>
     <title>My Website</title>
-    <style>
-        body {
-            background-color: purple;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .heart {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            transform: rotate(-45deg);
-        }
-        .heart::before,
-        .heart::after {
-            content: "";
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background-color: white;
-            border-radius: 50%;
-        }
-        .heart::before {
-            top: -50px;
-            left: 0;
-        }
-        .heart::after {
-            left: 50px;
-            top: 0;
-        }
-        .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            font-size: 16px;
-            font-weight: bold;
-            color: purple;
-            z-index: 1; /* Bring text to front */
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="heart">
-        <div class="text">About page bruh</div>
+    <div class="header">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#magazine">Magazine</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="origins.html">Origins</a></li>
+        </ul>
+    </div>
+    <div class="heart-section">
+        <div class="heart">
+            <div class="text">about page dafuq</div>
+        </div>
     </div>
 </body>
 </html>
