@@ -4,9 +4,9 @@ body {
     padding: 0;
 }
 .header {
-    background-color: whitesmoke;
+    background-color: white;
     color: white;
-    height: 60px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,10 +32,10 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    color: dimgray;
+    color: purple;
     text-decoration: none;
     font-size: 18px;
-    padding: 0 20px;
+    padding: 0 60px;
 }
 
 .nav li:first-child a {
@@ -48,13 +48,22 @@ body {
 }
 .nav a:hover {
     background-color: rgb(202, 201, 201);
-    color: rgb(48, 48, 48);
+    color: rgb(78, 0, 78);
 }
+
+
+
 
 .content {
   width: 100%;
   min-height: 100vh;
 }
+
+
+
+
+
+/*Heart section index*/
 
 .heart-section {
     position: relative;
@@ -62,7 +71,12 @@ body {
     justify-content: center;
     align-items: center;
     background-color: purple;
+    height: calc(100vh - 50px); /* Adjust height to account for header */
+}
+
+.index .heart-section{
     height: calc(200vh - 50px); /* Adjust height to account for header */
+    max-height: 2000px;
 }
 
 .heart {
@@ -92,7 +106,6 @@ body {
     top: 0;
 }
 
-
 .papers {
     display: flex;
     flex-wrap: wrap;
@@ -109,10 +122,15 @@ body {
     opacity: 0.95;
 }
 
+
+
+
+/*Image section 2 index*/
 .index-image-2 {
     position: relative;
     width: 100%; 
-    height: 150vh;
+    height: 200vh;
+    max-height: 2000px;
     background-image: url('images/castle.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,16 +152,35 @@ body {
     min-width: 600px;
 }
 
+/*Image section 3 index*/
+
 .index-image-3 {
     position: relative;
     width: 100%; 
-    height: 100vh;
+    height: 150vh;
     background-image: url('images/mega-love.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: aliceblue;
 }
+
+
+/* temporarry */
+.text {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    z-index: 1; /* Bring text to front */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
 
 
 /*origins page sepcifics  */
@@ -161,9 +198,6 @@ body {
     text-align: center;
 }
 
-.origins-page .heart-section {
-    height: calc(100vh - 50px); /* Adjust height to account for header */
-}
 
 @keyframes pulse {
     0%, 100% {
