@@ -6,21 +6,27 @@
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="purpleheart.ico" />
+    <script type="module" src="app.js" defer></script>
 </head>
-<body class="gallery-page">
+<body class="origins-page">
     <div class="header">
         <ul class="nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a class="underlined" href="gallery.html">Gallery</a></li>
+            <li><a class="underlined" href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
             <li><a href="origins.html">Origins</a></li>
         </ul>
     </div>
-    <div class="heart-section">
-        <div class="heart">
-            <div class="text">gallery page dafuq</div>
+    <div class="lamps">
+        <div class="lamp1">
+            <p>lamp1</p>
         </div>
+        <div class="lamp2">
+            <p>lamp2</p>
+        </div>
+        <input type="color" id="bgColorPicker" />
+        <button onclick="updateColor()">Update Background</button>
     </div>
 </body>
 </html>
